@@ -3,6 +3,14 @@
     <string name="add_fragment">Add Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- My Array of Fish -->
+    <string-array name="my_fish">
+        <item name="large_mouth_bass">Large Mouth BassBass</item>
+        <item name="small_mouth_bass">Small Mouth Bass</item>
+        <item name="grouper">Grouper</item>
+        <item name="trout">Trout</item>
+        <item name="black_tip_shark">Black Tip Shark</item>
+        <item name="striped_bass">Striped Bass</item>
+        <item name="rock_bass">Rock Bass</item>
+    </string-array>
 </resources>

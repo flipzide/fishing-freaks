@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Declare bottom navigation view
     BottomNavigationView bottomNavigationView;
 
-    // SECOND LISTVIEW ATTEMPT
+    // LISTVIEW
     ListView search_fish;
 
     @Override
@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         bottomNavigationView.setSelectedItemId(R.id.nav_home);
     }
 
-    // Declare activity fragments
-//    FragmentHome homeFragment = new FragmentHome();
+    // Declare bottom menu activity fragments
+//  FragmentHome homeFragment = new FragmentHome();
     FragmentSearch searchFragment = new FragmentSearch();
     FragmentAdd addFragment = new FragmentAdd();
     FragmentProfile profileFragment = new FragmentProfile();
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        // Switch statement to change fragment activities
+        // Switch statement to change bottom menu fragment activities
         switch (item.getItemId()) {
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, searchFragment).commit();

@@ -3,28 +3,66 @@ package fishingfreaks.ffapp;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     // Declare bottom navigation view
     BottomNavigationView bottomNavigationView;
 
     // LISTVIEW
-    ListView search_fish;
+    // ListView search_fish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Adapter Attempts
+        // ATTEMPT #3 - Set recyclerView with adapter
+//        ArrayList<item> itemsList = new ArrayList<>();
+//        itemsList.add(new item(R.drawable.fish0, "Bass", R.drawable.profile0, 2500));
+//        itemsList.add(new item(R.drawable.fish1, "Bass", R.drawable.profile1, 2500));
+//        itemsList.add(new item(R.drawable.fish2, "Bass", R.drawable.profile2, 2500));
+//        itemsList.add(new item(R.drawable.fish3, "Bass", R.drawable.profile3, 2500));
+//        itemsList.add(new item(R.drawable.fish4, "Bass", R.drawable.profile4, 2500));
+//
+//        mRecyclerView = findViewById(R.id.recyclerView);
+//        mRecyclerView.setHasFixedSize(true);
+//        mLayoutManager = new LinearLayoutManager(this);
+//        mAdapter = new CardAdapter(itemsList);
+//
+//        mRecyclerView.setLayoutManager(mLayoutManager);
+//        mRecyclerView.setAdapter(mAdapter);
+
+        // Set recyclerView with adapter
+//        ArrayList<item> items = new ArrayList<>();
+//        items.add(new item(R.drawable.fish0, "Bass", R.drawable.profile0, 2500));
+//        items.add(new item(R.drawable.fish1, "Mondo Bass", R.drawable.profile1, 3500));
+//        items.add(new item(R.drawable.fish2, "Large Mouth Bass", R.drawable.profile2, 5500));
+//        items.add(new item(R.drawable.fish3, "Bass", R.drawable.profile3, 10500));
+//
+//        mRecyclerView = findViewById(R.id.recyclerView);
+//        mRecyclerView.setHasFixedSize(true);
+//        mLayoutManager = new LinearLayoutManager(this);
+//        mAdapter = new Adapter(items);
+//
+//        mRecyclerView.setLayoutManager(mLayoutManager);
+//        mRecyclerView.setAdapter(mAdapter);
 
         // Set bottom nav on create
         bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -36,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // Declare bottom menu activity fragments
 //  FragmentHome homeFragment = new FragmentHome();
-    FragmentSearch searchFragment = new FragmentSearch();
+    FragmentMain mainFragment = new FragmentMain();
     FragmentAdd addFragment = new FragmentAdd();
     FragmentProfile profileFragment = new FragmentProfile();
 
@@ -47,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Switch statement to change bottom menu fragment activities
         switch (item.getItemId()) {
             case R.id.nav_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, searchFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, mainFragment).commit();
                 break;
             case R.id.nav_add:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, addFragment).commit();

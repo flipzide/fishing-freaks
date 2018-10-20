@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -18,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/private/var/folders/qm/f3_4527s2b59qb5vvcf4wryw0000gn/T/AppTranslocation/205EA48F-9ECE-4AA4-836E-3854ED43919F/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_person_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/private/var/folders/qm/f3_4527s2b59qb5vvcf4wryw0000gn/T/AppTranslocation/205EA48F-9ECE-4AA4-836E-3854ED43919F/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_backspace_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +33,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="d6d6d6" />
-                            <entry key="outputName" value="ic_person_light_grey" />
+                            <entry key="outputName" value="image_failed" />
                             <entry key="sourceFile" value="$USER_HOME$" />
                           </map>
                         </option>

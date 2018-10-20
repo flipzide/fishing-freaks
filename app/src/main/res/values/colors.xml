@@ -6,4 +6,5 @@
     <color name="textColor">#d6d6d6</color>
     <color name="menuBackgroundColor">#1a1a1a</color>
     <color name="primary_text_default_material_dark">#d6d6d6</color>
+    <color name="card_background_color">#e6e6e6</color>
 </resources>

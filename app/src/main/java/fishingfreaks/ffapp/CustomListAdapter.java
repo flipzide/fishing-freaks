@@ -69,7 +69,6 @@ public class CustomListAdapter  extends ArrayAdapter<Card> {
 
         try{
 
-
             //create the view result for showing the animation
             final View result;
 

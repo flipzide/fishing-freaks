@@ -15,17 +15,15 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
+        BottomNavigationView.OnNavigationItemSelectedListener {
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+//    private RecyclerView mRecyclerView;
+//    private RecyclerView.Adapter mAdapter;
+//    private RecyclerView.LayoutManager mLayoutManager;
 
     // Declare bottom navigation view
     BottomNavigationView bottomNavigationView;
-
-    // LISTVIEW
-    // ListView search_fish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,21 +43,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //        mRecyclerView.setHasFixedSize(true);
 //        mLayoutManager = new LinearLayoutManager(this);
 //        mAdapter = new CardAdapter(itemsList);
-//
-//        mRecyclerView.setLayoutManager(mLayoutManager);
-//        mRecyclerView.setAdapter(mAdapter);
-
-        // Set recyclerView with adapter
-//        ArrayList<item> items = new ArrayList<>();
-//        items.add(new item(R.drawable.fish0, "Bass", R.drawable.profile0, 2500));
-//        items.add(new item(R.drawable.fish1, "Mondo Bass", R.drawable.profile1, 3500));
-//        items.add(new item(R.drawable.fish2, "Large Mouth Bass", R.drawable.profile2, 5500));
-//        items.add(new item(R.drawable.fish3, "Bass", R.drawable.profile3, 10500));
-//
-//        mRecyclerView = findViewById(R.id.recyclerView);
-//        mRecyclerView.setHasFixedSize(true);
-//        mLayoutManager = new LinearLayoutManager(this);
-//        mAdapter = new Adapter(items);
 //
 //        mRecyclerView.setLayoutManager(mLayoutManager);
 //        mRecyclerView.setAdapter(mAdapter);

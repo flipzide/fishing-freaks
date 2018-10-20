@@ -25,15 +25,19 @@ public class FragmentMain extends Fragment {
         mListView = (ListView) view.findViewById(R.id.listView);
 
         ArrayList<Card> list = new ArrayList<>();
-        list.add(new Card("drawable://" + R.drawable.fish0, "Mondo Bass"));
-        list.add(new Card("drawable://" + R.drawable.fish1, "Large Mouth Bass"));
-        list.add(new Card("drawable://" + R.drawable.fish2, "Big Bass"));
-        list.add(new Card("drawable://" + R.drawable.fish3, "HUGE Bass"));
-        list.add(new Card("drawable://" + R.drawable.fish4, "Great day fishing!"));
+
+        list.add(new Card("drawable://" + R.drawable.fish0, "Great day fishing with friends at a new lake in Florida!"));
+        list.add(new Card("drawable://" + R.drawable.fish2, "Big Bass Factory"));
+        list.add(new Card("drawable://" + R.drawable.fish6, "Flounder for dinner"));
+        list.add(new Card("drawable://" + R.drawable.fish7, "Great fishing today!"));
+        list.add(new Card("drawable://" + R.drawable.fish8, "The Mondo\'s are biting!"));
+        list.add(new Card("drawable://" + R.drawable.fish4, "Large Mouth Bass"));
         list.add(new Card("drawable://" + R.drawable.smb0, "Small Mouth Bass"));
         list.add(new Card("drawable://" + R.drawable.smb1, "Mondo Small Mouth"));
         list.add(new Card("drawable://" + R.drawable.smb2, "Biggest of the day!"));
         list.add(new Card("drawable://" + R.drawable.smb3, "My PB Small Mouth!"));
+        list.add(new Card("drawable://" + R.drawable.fish5, "My PB Large Mouth!"));
+
 
         CustomListAdapter adapter = new CustomListAdapter(getActivity(), R.layout.card_layout_main, list);
         mListView.setAdapter(adapter);

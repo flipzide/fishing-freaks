@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".FragmentAdd">
+
+    <!-- TODO: Create add image activity -->
+    <TextView
+        android:id="@+id/nav_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="Add Catch Image"
+        android:textColor="@color/textColor"
+        android:textSize="22sp" />
+
+</FrameLayout>

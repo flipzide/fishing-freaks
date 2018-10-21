@@ -1,5 +1,7 @@
 package fishingfreaks.ffapp;
 
+import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
@@ -18,6 +20,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
         BottomNavigationView.OnNavigationItemSelectedListener {
 
+    private static int SPLASH_TIME = 4000; //This is 4 seconds
+
 //    private RecyclerView mRecyclerView;
 //    private RecyclerView.Adapter mAdapter;
 //    private RecyclerView.LayoutManager mLayoutManager;
@@ -30,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Adapter Attempts
         // ATTEMPT #3 - Set recyclerView with adapter
 //        ArrayList<item> itemsList = new ArrayList<>();
 //        itemsList.add(new item(R.drawable.fish0, "Bass", R.drawable.profile0, 2500));
@@ -57,10 +60,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // Declare bottom menu activity fragments
 //  FragmentHome homeFragment = new FragmentHome();
-    FragmentMain mainFragment = new FragmentMain();
+    FragmentMain MainFragment = new FragmentMain();
     FragmentAdd addFragment = new FragmentAdd();
     FragmentProfile profileFragment = new FragmentProfile();
-
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Switch statement to change bottom menu fragment activities
         switch (item.getItemId()) {
             case R.id.nav_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, mainFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, MainFragment).commit();
                 break;
             case R.id.nav_add:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, addFragment).commit();

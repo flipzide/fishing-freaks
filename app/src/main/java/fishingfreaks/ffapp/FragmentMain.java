@@ -35,7 +35,6 @@ public class FragmentMain extends Fragment {
         list.add(new Card("drawable://" + R.drawable.smb3, "My PB Small Mouth!"));
         list.add(new Card("drawable://" + R.drawable.fish5, "My PB Large Mouth!"));
 
-
         CustomListAdapter adapter = new CustomListAdapter(getActivity(), R.layout.card_layout_main, list);
         mListView.setAdapter(adapter);
 

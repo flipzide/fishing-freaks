@@ -20,7 +20,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
         BottomNavigationView.OnNavigationItemSelectedListener {
 
-    private static int SPLASH_TIME = 4000; //This is 4 seconds
+//    private static int SPLASH_TIME = 4000; //This is 4 seconds
 
 //    private RecyclerView mRecyclerView;
 //    private RecyclerView.Adapter mAdapter;

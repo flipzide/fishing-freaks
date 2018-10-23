@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // Declare bottom menu activity fragments
 //  FragmentHome homeFragment = new FragmentHome();
-    FragmentMain MainFragment = new FragmentMain();
+    FragmentMain fragmentMain = new FragmentMain();
     FragmentAdd addFragment = new FragmentAdd();
     FragmentProfile profileFragment = new FragmentProfile();
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Switch statement to change bottom menu fragment activities
         switch (item.getItemId()) {
             case R.id.nav_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, MainFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragmentMain).commit();
                 break;
             case R.id.nav_add:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, addFragment).commit();

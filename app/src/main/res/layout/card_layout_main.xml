@@ -25,7 +25,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_follow_style"
         android:elevation="10dp"
-        android:text="Like"
+        android:text="Follow"
         android:textColor="@color/textColor"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
